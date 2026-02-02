@@ -80,10 +80,10 @@ st.sidebar.markdown(f"## 🩻 {APP_TITLE}")
 st.sidebar.caption(APP_SUBTITLE)
 st.sidebar.markdown("---")
 
-# Logo: either upload OR auto-load logo.png if exists
+# Logo: either upload OR auto-load logo.jpeg if exists
 st.sidebar.markdown("### 🖼️ Upload Image")
 logo_file = st.sidebar.file_uploader("Upload logo/photo (png/jpg)", type=["png", "jpg", "jpeg"])
-auto_logo_path = "logo.png"  # optional: drop a logo.png in same folder
+auto_logo_path = "logo.jpeg"  # optional: drop a logo.jpeg in same folder
 
 logo_image = None
 if logo_file is not None:
@@ -452,3 +452,4 @@ with tab3:
 5) “And for reliability, there’s a **Demo Mode** fallback so the demo never fails due to quota/network.”
         """
     )
+
